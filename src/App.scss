@@ -1,0 +1,27 @@
+$primary-color : #ffd700;  //setting up primary color
+
+@import 'animate.css'; //importing animations from animate.css
+
+
+//setting up and importing the custom fonts  
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'La Be Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+// ------------------------ starting the styling ---------------------------//
+
+// --------- Default styles ---------- //
+input, textarea {
+  font-family: 'Helvetica Neue';
+}
