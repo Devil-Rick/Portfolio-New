@@ -80,3 +80,13 @@
         transform: rotateX(90deg);
     }
 }
+
+/* ---------- Responsive CSS ------------ */
+
+@media screen and (max-width: 480px) {
+    .stage-cube-container {
+        width: 100%;
+        position: initial;
+        height: 45rem;
+    }
+}
