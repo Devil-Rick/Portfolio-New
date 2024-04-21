@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import './index.scss'
+import './sidebar.scss'
 import Logo from '../../assets/images/logo-s.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
@@ -8,6 +8,7 @@ import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
 
 export default function Sidebar() {
+
     return (
         <>
             <div className="nav-bar">

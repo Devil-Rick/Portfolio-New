@@ -1,6 +1,6 @@
-import Sidebar from '../Sidebar';
+import Sidebar from '../Sidebar/sidebar';
 import {Outlet} from 'react-router-dom'
-import './index.scss';
+import './layout.scss';
 
 export default function Layout() {
     return (

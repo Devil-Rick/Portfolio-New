@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/images/logo-s.png'
-import './index.scss'
+import LogoImg from '../../assets/images/logo-s.png'
+import './home.scss'
 import { useEffect, useState } from 'react'
-import AnimatedLetters from '../Animated Letters'
+import AnimatedLetters from '../Animated Letters/aniLet'
+import Logo from './Logo/logo'
 
 export default function Home() {
     const [animate, setAnimate] = useState('text-animate')
@@ -27,7 +28,7 @@ export default function Home() {
                         <br />
                         <span className={`${animate} _13`}>I</span>
                         <span className={`${animate} _14`}>'m</span>
-                        <img src={Logo} alt="developer" />
+                        <img src={LogoImg} alt="developer" />
                         <AnimatedLetters letterClass={animate} array={nameArray} index={20} /> <br />
                         <AnimatedLetters letterClass={animate} array={jobArray} index={30} />
                     </h1>
@@ -36,6 +37,7 @@ export default function Home() {
 
                     <Link to={'/contact'} className='flatBtn'>CONTACT ME</Link>
                 </div>
+                <Logo />
             </div>
         </>
     )
