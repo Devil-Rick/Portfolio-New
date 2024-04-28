@@ -115,12 +115,17 @@
     animation-fill-mode: forwards;
 }
 
-
-
 /* ---------- Responsive CSS ------------ */
 
-@media screen and (max-width: 760px) {
-    .contact-form {
-
-    }
+@media screen and (max-width: 480px) {
+    .contact-page {
+        .info-map {
+            position: initial;
+            margin: 20px 0;
+        }
+        .map-wrap {
+            height: 25rem;
+            width: 90%;
+        }
+    } 
 }

@@ -1,0 +1,44 @@
+.skills-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    h1 {
+        font-size: 53px;
+        font-family: "Colvetca";
+        font-weight: 400;
+        color: #ff0000;
+        margin: 0 0 40px;
+        left: 10px;
+        position: relative;
+
+        &::before {
+            content: "<h1>";
+            font-family: "la be Aurore";
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin: -20px 0 0;
+            left: -10px;
+            opacity: 0.6;
+        }
+
+        &::after {
+            content: "</h1>";
+            font-family: "la be Aurore";
+            color: #ffd700;
+            font-size: 18px;
+            left: -39px;
+            bottom: -30px;
+            position: absolute;
+            margin-left: 20px;
+            opacity: 0.6;
+        }
+    }
+}
+
+.cards-container{
+    width: 70%;
+}

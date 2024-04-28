@@ -1,10 +1,11 @@
 .nav-bar {
-    background-color: #181818;
+    background-color: #000000;
+    box-shadow: -20px -1px 31px 1px #fff;
     display: flex;
     width: 60px;
     height: 100%;
     position: absolute;
-    padding: 10px 0;
+    padding: 10px 8px;
     top: 0;
     z-index: 3;
     flex-direction: column;
@@ -40,7 +41,7 @@ nav {
         }
 
         &:hover {
-            color: #ffd700;
+            color: #ff0000;
             svg {
                 opacity: 0;
             }
@@ -73,6 +74,13 @@ nav {
             content: "ABOUT";
         }
     }
+
+    a.skill-link {
+        &:after {
+            content: "SKILL";
+        }
+    }
+
     a.contact-link {
         &:after {
             content: "CONTACT";
@@ -81,7 +89,7 @@ nav {
 
     a.active {
         svg {
-            color: #ffd700;
+            color: #ff0000;
         }
     }
 }
@@ -103,7 +111,7 @@ ul {
             line-height: 16px;
 
             &:hover svg {
-                color: #ffd700;
+                color: #ff0000;
             }
         }
     }
@@ -112,11 +120,38 @@ ul {
 /* ---------- Responsive CSS ------------ */
 
 @media screen and (max-width: 480px) {
+    .nav-bar {
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+        box-shadow: 0px -14px 50px -15px #f8f8f8;
+
+        .logo {
+            width: 25%;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 65%;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 30%;
+        }
+    }
+
     .hide-nav {
-        height: fit-content !important;
+        width: fit-content;
         border-radius: 100px;
         top: 10px !important;
+        padding: 10px 12px;
         left: 10px;
+        box-shadow: 0px 0px 70px -7px #f8f8f8;
 
         ul {
             display: none;

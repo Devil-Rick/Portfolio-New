@@ -1,14 +1,23 @@
-
-html{
+html {
   font-size: 62.5%;
 }
 
 
 body {
   margin: 0;
-  font: 300 11/1.4 'Helvetica Neue','sans-serif';  /* format: font-weight font-size/line-height font-name */
+  font: 300 11 / 1.4 'Helvetica Neue', 'sans-serif';
   color: #444;
-  background-color: #022c43;
+  background-color: #0c0a10 !important;
+  opacity: 1;
+  background-image:
+    linear-gradient(30deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e),
+    linear-gradient(150deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e),
+    linear-gradient(30deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e),
+    linear-gradient(150deg, #0e0e0e 12%, transparent 12.5%, transparent 87%, #0e0e0e 87.5%, #0e0e0e),
+    linear-gradient(60deg, #0e0e0e77 25%, transparent 25.5%, transparent 75%, #0e0e0e77 75%, #0e0e0e77),
+    linear-gradient(60deg, #0e0e0e77 25%, transparent 25.5%, transparent 75%, #0e0e0e77 75%, #0e0e0e77);
+  background-size: 140px 240px;
+  background-position: 0 0, 0 0, 70px 120px, 70px 120px, 0 0, 70px 120px;
   display: block;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;

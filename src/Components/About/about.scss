@@ -1,10 +1,7 @@
 .stage-cube-container {
     width: 50%;
     height: 100%;
-    padding-top: 18%;
-    top: 0;
-    position: absolute;
-    right: 0;
+    padding-top: 35%;
     margin-left: 0;
     overflow: hidden;
 }
@@ -86,7 +83,6 @@
 @media screen and (max-width: 480px) {
     .stage-cube-container {
         width: 100%;
-        position: initial;
         height: 45rem;
     }
 }

@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom'
 import './sidebar.scss'
 import Logo from '../../assets/images/logo-s.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faGears, faHome } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons'
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
@@ -28,6 +28,9 @@ export default function Sidebar() {
                     </NavLink>
                     <NavLink onClick={toggle} activeclassname='active' className={`about-link`} to={'/about'}>
                         <FontAwesomeIcon icon={faUser} color='#4d4d4e' />
+                    </NavLink>
+                    <NavLink onClick={toggle} activeclassname='active' className={`skill-link`} to={'/skills'}>
+                        <FontAwesomeIcon icon={faGears} color='#4d4d4e' />
                     </NavLink>
                     <NavLink onClick={toggle} activeclassname='active' className={`contact-link`} to={'/contact'}>
                         <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e' />
