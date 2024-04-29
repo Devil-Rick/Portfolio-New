@@ -8,7 +8,7 @@ export default function SkillCard() {
         <>
             <div className="card-list">
                 {skills.map((skill, index) => (
-                    <Card border="info" key={index} style={{ width: '18rem' }}>
+                    <Card border="info" className='card' key={index} style={{ width: '18rem' }}>
                         <Card.Header className={skill.id}>{skill.title}</Card.Header>
                         <Card.Body>
                             <Card.Title>{skill.title}</Card.Title>

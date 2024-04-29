@@ -1,3 +1,16 @@
 .card-list{
     display: flex;
+    height: 50%;
+}
+
+.card{
+    border-radius: 10px;
+    width: 20rem !important;
+    height: 20rem;
+    margin: 0 15px;
+    background-color: #f40846;
+    color: #fffffb;
+    transform: rotate(5deg);
+    text-align: center;
+    font-size: 12px;
 }

@@ -30,12 +30,13 @@ export default function Skills() {
                     </h1>
                 </div>
                 <div className="cards-container">
+                    <div className='left-holder'></div>
                     <div className="left">
                         <MarqueeCards direction="left">
                             <SkillCard />
                         </MarqueeCards>
                     </div>
-
+                    <div className='right-holder'></div>
                     <div className="right">
                         <MarqueeCards direction="right">
                             <SkillCard />
