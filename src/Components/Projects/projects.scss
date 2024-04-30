@@ -1,0 +1,83 @@
+.project-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.caro-container {
+    width: 90%;
+    padding: 20px;
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 20px;
+        font-family: sans-serif;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 3px;
+        &::before{
+            content: '';
+        }
+        &::after{
+            content: '';
+        }
+    }
+
+    img {
+        width: 100%;
+        opacity: 0.4;
+    }
+}
+
+.carousel-indicators {
+    bottom: 35%;
+    margin-left: 0;
+    flex-direction: column;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    border-top: 0;
+    border-bottom: 0;
+    margin: 2px;
+}
+
+.carousel-caption {
+    bottom: 35%;
+}
+
+.demoBtn {
+    background-color: transparent;
+    padding: 5px 30px;
+    letter-spacing: 3px;
+    a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    &:hover {
+        background-color: #2b2a2ac7;
+        color: #f1f1f1;
+    }
+}
+
+.repoBtn {
+    position: absolute;
+    right: 10px;
+    color: #fff;
+    background-color: #000;
+    top: 3px;
+    padding: 1px 8px;
+    border-radius: 25px;
+    font-size: 30px;
+    z-index: 5;
+    &:hover {
+        color: #fa0101;
+    }
+}

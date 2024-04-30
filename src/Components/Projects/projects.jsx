@@ -2,8 +2,10 @@ import { useState } from 'react';
 import AnimatedLetters from '../Animated Letters/aniLet'
 import './projects.scss'
 import { useEffect } from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Button, Carousel } from 'react-bootstrap';
 import { projects } from '../../data/project-data';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Project() {
     const [animate, setAnimate] = useState('text-animate')
@@ -18,7 +20,7 @@ export default function Project() {
 
     return (
         <>
-            <div className='container skills-page'>
+            <div className='container project-page'>
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters
@@ -33,10 +35,15 @@ export default function Project() {
                     <Carousel>
                         {projects.map((project, index) => (
                             <Carousel.Item key={index}>
-                                {/* <ExampleCarouselImage text="First slide" /> */}
+                                <a href={project.git} className='repoBtn' target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                                <img src={project.image} alt={project.name} />
                                 <Carousel.Caption>
-                                    <h3>First slide label</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                    <h1>{project.name}</h1>
+                                    <Button className='demoBtn'>
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer">See Demo</a>
+                                    </Button>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         ))}
