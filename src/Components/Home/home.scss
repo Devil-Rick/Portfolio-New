@@ -1,7 +1,7 @@
 .homepage {
     .text-zone {
         max-height: 90%;
-        width: 40%;
+        width: 50%;
     }
 
     h1 {
@@ -34,7 +34,9 @@
         }
 
         img {
-            width: 32px;
+            width: 40px;
+            position: relative;
+            bottom: 10px;
             margin-left: 18px;
             opacity: 0;
             height: auto;

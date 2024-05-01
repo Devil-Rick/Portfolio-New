@@ -32,6 +32,7 @@
 .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: fit-content;
     height: -webkit-fill-available;
     will-change: contents; // check how this works

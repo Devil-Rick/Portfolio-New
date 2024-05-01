@@ -9,7 +9,9 @@ export default function SkillCard() {
             <div className="card-list">
                 {skills.map((skill, index) => (
                     <Card border="info" className='card' key={index} style={{ width: '18rem' }}>
-                        <Card.Header className={skill.id}>{skill.title}</Card.Header>
+                        <Card.Header className={skill.id}>
+                            <img src={skill.icon} alt="skill icon" />
+                        </Card.Header>
                         <Card.Body>
                             <Card.Title>{skill.title}</Card.Title>
                             <Card.Text>
