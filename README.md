@@ -1,4 +1,4 @@
-# who's bl33h ?
+# My Personal Website 
 Welcome to my portfolio repository! This project showcases my React skills. It includes briefly introducing me, my projects, the technologies I've worked with, and my experience. You'll also find a contact form at the bottom and my social media links below it. Feel free to explore and connect with me!
 
 <p align="center">
@@ -13,22 +13,11 @@ Welcome to my portfolio repository! This project showcases my React skills. It i
 <a href="https://whosbl33h.netlify.app/">Try it out here</a> 
 </p>
 
-## Features
-
-* Vite
-```bash
-# Install dependencies
-$ npm i
-# run the app
-$ npm run dev
-```
-
 ## Files
 
 - src: the file that implements de solution.
 - assets: resources that are used in an application.
 - components: reusable pieces of code that define the appearance and behaviour of a part of the UI.
-- pages: the different areas of the portfolio.
 - constants: values that the program cannot alter during normal execution.
 
 
